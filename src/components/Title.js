@@ -4,8 +4,8 @@ class Title extends React.Component {
 	render() {
 		return (
 			<div>
-				<h1>Weather Finder</h1>
-				<p>Find out temperature, conditions and more...</p>
+				<h1>Pogodynka</h1>
+				<p>Znajdź pogodę w swoim mieście</p>
 			</div>
 		);
 	}

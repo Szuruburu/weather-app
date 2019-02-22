@@ -4,6 +4,8 @@ import Form from './components/Form.js';
 import Weather from './components/Weather.js'
 
 const API_KEY = '05cb62667584a4547c1ecf49b6ff086e';
+const AppTitle = 'Pogodynka';
+{ document.title = AppTitle; }
 
 class App extends React.Component {
 	state = {
@@ -19,7 +21,7 @@ class App extends React.Component {
 		e.preventDefault();
 		const city = e.target.elements.city.value;
 		const country = e.target.elements.country.value;
-		const api_call = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${API_KEY}&units=metric`);
+		const api_call = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${API_KEY}&units=metric&lang=pl`);
 		const data = await api_call.json();
 		console.log(data);
 		if (city && country) {
