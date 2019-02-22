@@ -1,13 +1,16 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import Title from './components/Title.js';
 import Form from './components/Form.js';
 import Weather from './components/Weather.js'
 
+import AppTitle from './components/Title.js'
+
 const API_KEY = '05cb62667584a4547c1ecf49b6ff086e';
-const AppTitle = 'Pogodynka';
-{ document.title = AppTitle; }
+
 
 class App extends React.Component {
+
 	state = {
 		temperature: undefined,
 		city: undefined,
